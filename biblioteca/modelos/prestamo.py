@@ -13,7 +13,7 @@ class Prestamo:
 
     def __str__(self) -> str:    
         estado = "Activo" if self.activo else f"Devuelto {self.fecha_devolucion}"
-        return f"Usuario: {self.usuario} - Libro Prestado: {self.libro} - Fecha Préstamo: {self.fecha_prestamo} - Fecha Devolución: {self.fecha_devolucion}"
+        return f"Usuario: {self.usuario} - Libro Prestado: {self.libro} - Fecha Préstamo: {self.fecha_prestamo} - {estado}"
 
     def __repr__(self):
         return(

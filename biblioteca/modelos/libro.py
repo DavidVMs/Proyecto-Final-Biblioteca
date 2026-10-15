@@ -9,7 +9,7 @@ class Libro:
 
     def __str__(self) -> str:   
         estado = "Disponible" if self.disponible else "Prestado" 
-        return f"ISBN: {self.isbn} - Título: {self.titulo} - Autor: {self.autor} - Año: {self.anio} - Género: {self.genero} - Disponible: {self.disponible}"
+        return f"ISBN: {self.isbn} - Título: {self.titulo} - Autor: {self.autor} - Año: {self.anio} - Género: {self.genero} - {estado}"
     
     def __repr__(self):
         return(
@@ -18,7 +18,7 @@ class Libro:
             f"Autor: {self.autor!r}, "
             f"Año: {self.anio!r}, "
             f"Género: {self.genero!r}, "
-            f"Disponible: {self-self.disponible!r}"
+            f"Disponible: {self.disponible!r}"
         )
 
     def __eq__ (self, libro):

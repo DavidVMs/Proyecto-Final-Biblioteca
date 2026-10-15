@@ -16,3 +16,5 @@ class Usuario:
             f"Email: {self.email!r}"
         )
 
+    def __eq__ (self, usuario):
+        return self.id == usuario.id
